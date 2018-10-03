@@ -1,0 +1,16 @@
+<!--Llamar a otro componente de otra manera, con entradas (input), llamo al componente user y le paso el parametro nameUser -->
+<h1>Llamada entre componentes con entradas</h1>
+<ul>
+    <app-user *ngFor="let user of users" [nameUser]="user"></app-user>
+</ul>
+
+<!--Lllamadas a objetos creados dentro del compomente-->
+<h1>Llamada a objetos creados dentro de otro componente</h1>
+<div>
+    <p>Name: {{name}}</p>
+    <p>Street: {{adress.street}}</p>
+    <p>City: {{adress.city}}</p>
+    <ul>Hobbies: 
+        <li *ngFor="let hobby of hobbies">{{hobby}}</li>
+    </ul>
+</div>

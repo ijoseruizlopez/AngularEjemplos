@@ -1,0 +1,8 @@
+<!--Llamar a otro componente desde otro -->
+<h1>Llamada entre componentes</h1>
+<ul>
+    <li *ngFor="let user of users"> 
+        <app-user [nameUser]="user">
+        </app-user>
+    </li>
+</ul>

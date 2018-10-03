@@ -1,0 +1,20 @@
+<!--Manejo de eventos-->
+<h1>Manejo de eventos</h1>
+<button (click)="sayHello()" >
+    Clck me!
+</button>
+
+<!--Manejo de eventos dentro de ciclos-->
+<h1>Manejo de en ciclos y formularios</h1>
+<ul>
+    <li *ngFor="let user of users"> 
+        {{user}} <button (click)="deleteUser(user)">X</button>
+    </li>
+</ul>
+    
+<form (submit)="addUser(newUser.value)">
+    <input type="text" #newUser>
+    <button>
+        Send User
+    </button>
+</form>
